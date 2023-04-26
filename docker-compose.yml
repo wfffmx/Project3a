@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: Stock-Visualizer
+    ports:
+      - "6001:6003"
+    environment:
+      FLASK_ENV: development
